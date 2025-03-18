@@ -33,10 +33,52 @@
             bottom: 0;
             padding: 10px;
             color: white;
+            font-size: 12px;
         }
+
+        .rules {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            font-size: 20px;
+        }
+
+        dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 700px;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: beige;
+            z-index: 999999;
+        }
+
+        #close {
+            background-color: beige;
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
+    <dialog id="modal">
+        <h1>Rules</h1>
+        <p>Comming soon...</p>
+        <form method="dialog">
+            <button id="close">Close</button>
+        </form>
+    </dialog>
+    <a href="#" class="rules" onclick="modal.show()">rules</a>
     <div class="footer">This website is constructed by <a href="https://digital-scrolls.com/">Digital Scrolls</a>. Portions of MTG Realms are unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. The literal and graphical information presented on this site about Magic: The Gathering, including card images and mana symbols, is copyright Wizards of the Coast, LLC. MTG Realms is not produced by or endorsed by Wizards of the Coast.
 
 All other content © 2025 Digital Scrolls s.r.o
